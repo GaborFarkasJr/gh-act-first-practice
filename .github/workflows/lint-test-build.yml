@@ -2,7 +2,6 @@ name: Lint, test and build project
 on: [push, workflow_dispatch]
 jobs:
   lint:
-    needs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
