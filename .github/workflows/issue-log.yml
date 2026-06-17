@@ -4,5 +4,7 @@ jobs:
   log-new-issue:
     runs-on: ubuntu-latest
     steps:
+      - name: Get code
+        uses: actions/checkout@v3
       - name: Log issue related event details
         run: echo ${{toJSON(github.event)}}
